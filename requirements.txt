@@ -1,0 +1,21 @@
+
+# Web服务相关
+uvicorn
+fastapi
+requests
+httpx[socks]
+python-multipart
+
+# 配置/数据处理
+pyyaml
+scikit-learn
+
+open3d
+
+transformers==4.57.6  # 强制指定版本
+openai
+qwen_agent
+
+soundfile
+soundfile
+

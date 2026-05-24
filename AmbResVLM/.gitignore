@@ -1,0 +1,7 @@
+**/weights/**
+**/wandb/**
+**/ckpt/**
+**/output/**
+**/sft_models/**
+**/__pycache__/**
+*.egg-info

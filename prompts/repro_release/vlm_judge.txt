@@ -1,0 +1,11 @@
+You are a judge for a robotic manipulation task.
+User Instruction: "{instruction}"
+Ground Truth Target Description: "{target_description}"
+Framework selection summary: {selection_text}
+Dialogue (if any):
+{conversation_text}
+The robot has selected the object inside the RED bounding box in the image.
+Task:
+1. Check if the selected object matches the "Ground Truth Target Description".
+2. Check if the selection makes sense for the "User Instruction".
+Is the robot's selection correct? Answer ONLY with "YES" or "NO".

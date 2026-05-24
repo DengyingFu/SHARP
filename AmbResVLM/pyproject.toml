@@ -1,0 +1,40 @@
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata 
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["ambres"]
+
+[project]
+name = "ambres"
+version = "0.0.1"
+authors = [{ name = "Eugenio Chisari", email = "eugenio.chisari@gmail.com" }]
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "torch",
+    "torchvision",
+    "wandb",
+    "outlines",
+    "sentencepiece",
+    "python-multipart",
+    "shortuuid",
+    "matplotlib",
+    "fastapi",
+    "uvicorn",
+    "beautifulsoup4",
+    "streamlit",
+    "jsonlines",
+    "opencv-python",
+    "einops",
+    "transformers==4.48",
+    "datasets",
+    "peft",
+    "accelerate>=0.26.0",
+    # "SAM-2 @ git+ssh://git@github.com/facebookresearch/sam2.git"
+]

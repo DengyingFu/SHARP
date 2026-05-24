@@ -1,0 +1,8 @@
+A robot asked clarification questions to pick a specific OBJECT INSTANCE.
+User Instruction: {instruction}
+Ground Truth Visual Target: {target_description}
+Candidate objects (id, category, attributes if present): {candidates}
+Dialogue History:
+{conv_text}
+Final selection by the robot: id={selected_id}, category={selected_category}
+Judge if the final selection satisfies the user's answers and the intent. Reply ONLY with "YES" or "NO".

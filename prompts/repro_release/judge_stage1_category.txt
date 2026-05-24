@@ -1,0 +1,8 @@
+You are evaluating whether a robotic system picked the correct object CATEGORY after parsing a user instruction.
+User Instruction: {instruction}
+Visual Target Description (from benchmark GT): {target_description}
+Detected Object Categories in the scene: {online_obj_list}
+Categories predicted by the system for the target: {predicted_categories}
+Decide if the predicted categories correspond to the user's intended object (synonyms count as correct).
+If the required object category clearly does not exist in the detected list, answer NO.
+Respond with ONLY "YES" or "NO".
