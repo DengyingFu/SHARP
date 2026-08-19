@@ -5,6 +5,7 @@
 <div align="center">
   <h3 align="center">SHARP：Hierarchical Ambiguity Resolution with Small Language Models In Domestic HRI</h3>
 
+  ![Framework Overview](docs/fig2_from_svg.pdf)
 
 </div>
 
@@ -40,9 +41,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The **SHARP** framework is a hierarchical ambiguity resolution pipeline designed specifically for resource-constrained, on-device processing in domestic human-robot interaction (HRI). It integrates a lightweight Small Language Model (SLM) and a Vision-Language Model (VLM) to establish a coarse-to-fine resolution process. 
+The **SHARP** framework is a hierarchical ambiguity resolution pipeline designed specifically for resource-constrained, on-device processing in domestic human-robot interaction (HRI). It integrate[...]
 
-The SLM initially infers user intent at the category level and selectively invokes the VLM to ground visual attributes. The system then performs symbolic reasoning over a pruned scene graph to resolve instance-level references, and dynamically prompts the user for clarification if ambiguity persists.
+The SLM initially infers user intent at the category level and selectively invokes the VLM to ground visual attributes. The system then performs symbolic reasoning over a pruned scene graph to res[...]
 
 **Key Dependencies**
 This project builds upon the amazing works of the following open-source communities:
@@ -164,7 +165,7 @@ sam/checkpoints/sam_vit_h_4b8939.pth
 <!-- STARTING SERVICES -->
 ## Starting Services
 
-To run the SHARP evaluation pipeline, several background services must be initialized. These include the **GroundingDINO** background service for object detection and a **Dual-Model** service hosting both the Qwen Agent (SLM) and SmolVLM (VLM).
+To run the SHARP evaluation pipeline, several background services must be initialized. These include the **GroundingDINO** background service for object detection and a **Dual-Model** service hos[...]
 
 ### 1. Start GroundingDINO Service
 ```bash
@@ -196,7 +197,7 @@ python start_dual_model_services.py \
 Use the `run_evaluate.py` script as the unified entry point for evaluations.
 
 ### Basic Usage
-The primary entry point for executing the evaluation framework is using `run_evaluate.py`. You can evaluate either the real-world dataset (`Ambiguity-200`) or the simulation dataset (`Ambiguity-1k`).
+The primary entry point for executing the evaluation framework is using `run_evaluate.py`. You can evaluate either the real-world dataset (`Ambiguity-200`) or the simulation dataset (`Ambiguity-1[...]
 
 ```bash
 python run_evaluate.py <benchmark_folder> --eval <eval_type> [other_arguments]
