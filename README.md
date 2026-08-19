@@ -5,7 +5,7 @@
 <div align="center">
   <h3 align="center">SHARP：Hierarchical Ambiguity Resolution with Small Language Models In Domestic HRI</h3>
 
-  ![Framework Overview](docs/fig2_from_svg.pdf)
+  ![Framework Overview](docs/fig2_from_svg.png)
 
 </div>
 
